@@ -1,0 +1,15 @@
+class User
+
+  def log_in
+  @logged_in = true
+  end
+end
+
+class Student < User
+def log_in
+  super            #"super" used to redefine the log_in method
+  @in_class = true #is additional code added to the Student#log_in method
+  end
+end
+ #class Student Inherits User class but needs to be dynamic and keep track of students in class.  we 
+ #re-defind the login method and put "super" then an instance that is eq. to true 

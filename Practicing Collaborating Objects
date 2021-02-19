@@ -1,0 +1,16 @@
+authors
+  has_many stories
+  has_many categories through stories
+  
+stories
+  belons to an authors
+  belongs to categories
+  
+categories
+  has_many stories
+  has_many authors, through stories
+  
+  hemingway = author.new
+  hemingway.stories #=> [#<Story>, #<Story>]
+  
+  

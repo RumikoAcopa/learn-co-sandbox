@@ -1,0 +1,9 @@
+kanye = 
+Person.new("Kanye")
+
+kanye.name
+=> "Kanye"
+
+kanye.name = "Yeezy"
+kanye.name
+=> "Yeezy"
